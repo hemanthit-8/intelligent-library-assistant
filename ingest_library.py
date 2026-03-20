@@ -83,6 +83,12 @@ vectordb = Chroma.from_documents(
 print("Vector DB created with", len(chunks), "chunks")
 
 def main():
+
+    # ✅ ADD THIS HERE (FIRST LINE inside main)
+    if os.path.exists(VECTOR_DB):
+        print("DB already exists")
+        return
+
     print("Starting ingestion...")
 
     documents = []
