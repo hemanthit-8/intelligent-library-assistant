@@ -1,6 +1,7 @@
 langchain
 langchain-core
 langchain-community
+langchain-chroma==0.1.4
 langchain-text-splitters
 langchain-groq
 langgraph
