@@ -4,6 +4,7 @@ langchain-community
 langchain-chroma==0.1.4
 langchain-text-splitters
 langchain-groq
+langchain-huggingface
 langgraph
 chromadb
 streamlit
