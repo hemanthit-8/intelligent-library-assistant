@@ -10,3 +10,4 @@ chromadb
 streamlit
 pypdf
 packaging
+sentence-transformers
