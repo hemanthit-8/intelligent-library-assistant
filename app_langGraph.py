@@ -14,6 +14,9 @@ from langgraph.graph import StateGraph, START, END
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 VECTOR_DB = "vectordb"
+if not os.path.exists("vectordb"):
+    from ingest_library import main as ingest_main
+    ingest_main()
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")  # Set your Groq API key in Streamlit secrets
 
 # ---------------- DOMAIN ALIASES ----------------
